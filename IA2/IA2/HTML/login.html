@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Coding Conf Tech Conference 2026</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Coding Conf Tech Conference 2026</h1>
+        <p>Jamaica's Largest Technology Gathering</p>
+    </header>
+
+    <main>
+        
+        <!-- Registration / Login Form Section -->
+        <section class="form-section" aria-label="User Registration and Login Form">
+            <h2>User Registration / Login Form</h2>
+            <form id="user-form" enctype="multipart/form-data">
+
+                <div id="form-message" aria-label="Form Messages and Alerts"></div>
+
+                <div class="input-group">
+                    <label for="user-name">Full Name</label>
+                    <input
+                        type="text"
+                        id="user-name"
+                        placeholder="firstname lastname"
+                        value="Big Girl"
+                    />
+                </div>
+
+                <div class="input-group">
+                    <label for="user-email">Email ID</label>
+                    <input
+                        type="text"
+                        id="user-email"
+                        placeholder="email address"
+                        value="biggirl@here.com"
+                    />
+                </div>
+
+                <div class="input-group">
+                    <label for="user-github">GitHub User Tag</label>
+                    <input
+                        type="text"
+                        id="user-github"
+                        placeholder="GitHub Tag"
+                        value="@biggirl"
+                    />
+                </div>
+
+                <div class="input-group">
+                    <label for="user-avatar">Upload Avatar Image</label>
+                    <input
+                        type="file"
+                        id="user-avatar"
+                        placeholder="upload image types (JPEG/PNG) under 500KB"
+                    />
+                </div>
+
+                <button id="btnAddUser" onclick="validateInputs();">Generate My Ticket</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <script src="../js/validation.js"></script>
+
+    <footer>
+        <p>&copy; 2026 Coding Conf. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

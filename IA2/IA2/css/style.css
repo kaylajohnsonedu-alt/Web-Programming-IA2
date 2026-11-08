@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto Condensed');
+
+:root {
+    --primary-bg-color: #0f172a;
+    --primary-color: #ffffff;
+    --secondary-bg-color: #8FBC8F;
+    --secondary-color: #FFFAF0;
+    --tertiary-bg-color: purple;
+    --tertiary-color: gold;
+    --document-font-family: 'Roboto Condensed', Tahoma, sans-serif;
+    --hero-color: gold;
+    --home-color: white;
+    --primary-padding-all: 1rem;
+    --profile-card: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--document-font-family);
+    color: var(--primary-color);
+    min-height: 100vh;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.form-section {
+    background: var(--card-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.form-section h2, .list-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 5px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+
+/* 1. Default Styles: Mobile Screens (Up to 480px) */
+body {
+  background-image: url('../assets/background-mobile.PNG');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.ticket {
+    margin-top: 10%;
+}
+
+/* Container holds the context for absolute positioning */
+.image-container {
+  position: relative;
+  display: inline-block; /* Fits the container tightly around the image */
+  max-width: 100%;
+}
+
+/* Ensure the image is responsive */
+.bg-image {
+  display: block; 
+  width: 100%;
+  height: auto;
+}
+
+/* Position the text layer over the image */
+.text-overlay-bottom {
+  position: absolute;
+  
+  /* Standard method to perfectly center text */
+  bottom: 20px;
+  left: 20px;
+  
+  /* Styling to make text readable over any image background */
+  color: white;
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds contrast */
+  text-align: center;
+  pointer-events: none; /* Allows clicks to pass through to the image if needed */
+}
+
+
+
+@media screen and (min-width: 481px) {
+  body {
+    background-image: url('../assets/background-tablet.PNG');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    background-image: url('../assets/background-desktop.PNG');
+  }
+}
+
